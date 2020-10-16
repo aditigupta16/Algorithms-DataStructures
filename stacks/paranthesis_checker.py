@@ -12,7 +12,7 @@ def paranthesis_check(s):
         else:
             if not stack or stack.pop()!=paranthesis_mapping[bracket]:
                 return False
-    if stack > 0:
+    if stack:
         return False
     return True
 
