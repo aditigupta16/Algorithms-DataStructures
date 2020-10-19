@@ -25,7 +25,10 @@ def relative_sorting(arr1, arr2):
             not_present_elements.append(element)
     return output + sorted(not_present_elements)
 
-
+# a better approach would be to loop through arr1, find count of each, append
+# to a map and then after that loop through arr2 to check whether the element is there, if yes
+# add it count wise in output, delete it from mapping and then add the remaining elements in
+# the map to the output
 
 
 
